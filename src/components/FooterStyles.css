@@ -8,7 +8,6 @@
     max-width: 1140px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-gap: 60px;
 }
 
@@ -16,8 +15,8 @@
     height: 100%;
     max-width: 100%;
     display: flex;
-    flex-direction: column;
     padding: 1rem;
+    justify-content: space-between;
 }
 
 .location{
@@ -34,7 +33,9 @@
 }
 
 .social{
-    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
 }
 
 h4 {
@@ -47,5 +48,10 @@ h4 {
 
         grid-template-columns: 1fr;
         
+    }
+
+    .left{
+        flex-direction: column;
+        padding-left: 60px;
     }
 }

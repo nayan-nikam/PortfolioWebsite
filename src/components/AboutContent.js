@@ -1,25 +1,19 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import "./AboutContentStyles.css"
-import React1 from "../assets/temp1.png"
+import resume from "../assets/resume1.jpg"
+
 
 import React from 'react'
 
 const AboutContent = () => {
   return (
     <div className="about">
-        <div className="left">
-            <h1>Who Am I?</h1>
-            <p>My name is Nayan Nikam. I am a Fresher Software Developer </p>
-            <Link to="/contact">
-                <button className="btn">Contact</button>
-            </Link>
+        <div className="imager">
+            <img src={resume} alt=""/>
         </div>
-        <div className="right">
-            <div className="img-container">
-                <div className="img-stock top">
-                    <img src={React1} className="img" alt="true " />
-                </div>
-            </div>
+        
+        <div className="rbutton">
+           <NavLink to={"https://drive.google.com/file/d/1EAYnXqnS4MPdAUP5yLFJMOjsxaWQCWcy/view?usp=drive_link"}><button className="btn">Download</button></NavLink> 
         </div>
     </div>
   )
