@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import HeroImage from '../components/HeroImage'
 import Footer from '../components/Footer'
-import Work from '../components/Work'
+import Work from '../components/Work.js'
 
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
     <div>
       <Navbar/>
       <HeroImage />
-      <Work />
+      <Work/>
       <Footer />
     </div>
   )
