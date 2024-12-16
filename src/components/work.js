@@ -6,9 +6,10 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Register the ScrollTrigger plugin
-gsap.registerPlugin(ScrollTrigger);
+
 
 const Work = () => {
+  gsap.registerPlugin(ScrollTrigger);
   const containerRef = useRef(null);
   const cardsRef = useRef([]);
 
