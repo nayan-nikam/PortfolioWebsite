@@ -5,7 +5,6 @@ import workCardData from "./workCardData";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// Register the ScrollTrigger plugin
 
 
 const Work = () => {
