@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 // Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
-const Work = () => {
+const work = () => {
   const containerRef = useRef(null);
   const cardsRef = useRef([]);
 
@@ -72,4 +72,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default work;
