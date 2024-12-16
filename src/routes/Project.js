@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import HeroImg2 from '../components/HeroImg2'
-import Work from './components/Work.js'
+import Work from '../components/Work.js'
 
 const Project = () => {
   return (
