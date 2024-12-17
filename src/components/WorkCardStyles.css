@@ -21,6 +21,7 @@
     cursor: pointer;
     border-radius: 10px; /* Optional: Adds rounded corners */
     will-change: transform, box-shadow; /* Hint to browser to optimize */
+    height: 392px;
   }
   
   /* Hover effect for 3D look */
@@ -59,7 +60,7 @@
   
   .pro-btns {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0.5rem 0;
   }
   
@@ -76,6 +77,9 @@
         max-width: 90%;
         margin: auto;
         grid-template-columns: 1fr;
+    }
+    .project-card{
+      height: fit-content;
     }
     
 }
