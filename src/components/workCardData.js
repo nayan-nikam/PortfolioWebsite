@@ -3,12 +3,7 @@ import pro2 from "../assets/proj4.jpg"
 import pro3 from "../assets/pro3.jpg"
 
 const ProjectCardData = [
-    {
-        imgsrc: pro1,
-        title: "Todo Management App",
-        text: "CRUD Todo Management Web-App using Spring Boot 3.0 and Java",
-        view: "https://github.com/attack-titan4/Todo-Web-App"
-    },
+    
     
     {
         imgsrc: pro2,
@@ -22,6 +17,12 @@ const ProjectCardData = [
         text: "Clone of Thirty Six Studios website using React js with GSAP ",
         view: "https://github.com/attack-titan4/thirtysixstudios_clone"
     },
+    {
+        imgsrc: pro1,
+        title: "Todo Management App",
+        text: "CRUD Todo Management Web-App using Spring Boot 3.0 and Java",
+        view: "https://github.com/attack-titan4/Todo-Web-App"
+    }
 ]
 
 export default ProjectCardData

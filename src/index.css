@@ -48,3 +48,31 @@ p,a:hover{
   transition: 0.3s;
   border: 0;
 }
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the vertical scrollbar */
+  height: 12px; /* Height of the horizontal scrollbar */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #100f0f; /* Color of the track */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: rgb(140, 207, 239); /* Color of the thumb */
+  border-radius: 6px; /* Rounded corners */
+}
+
+/* Style the thumb when hovered */
+::-webkit-scrollbar-thumb:hover {
+  background: #9de3f8; /* Darker shade on hover */
+}
+
+/* Firefox-specific scrollbar styling */
+body {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: rgb(140, 207, 239) #111010; /* Thumb color and track color */
+}
