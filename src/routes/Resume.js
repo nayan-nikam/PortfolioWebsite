@@ -4,15 +4,15 @@ import Footer from '../components/Footer'
 import HeroImg2 from '../components/HeroImg2'
 import AboutContent from '../components/AboutContent'
 
-const About = () => {
+const Resume = () => {
   return (
     <div>
       <Navbar/>
-      <HeroImg2 heading="ABOUT." text="I am a Software Developer." />
+      <HeroImg2 heading="MY RESUME." />
       <AboutContent />
       <Footer/>
     </div>
   )
 }
 
-export default About
+export default Resume

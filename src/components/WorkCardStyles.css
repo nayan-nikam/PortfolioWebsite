@@ -1,54 +1,85 @@
-.project-heading{
+.project-heading {
     text-align: center;
     padding: 4rem 0 2rem 0;
-}
-
-.project-container{
-    max-width: 1140px;
-    margin: auto;
+  }
+  
+  .project-container {
+    max-width: 1240px;
+    margin-left: 139px;
+    margin-right: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
+    grid-gap: 100px;
     padding-bottom: 5rem;
-}
-
-.project-card{
+  }
+  
+  .project-card {
     background: #1a1919;
     padding: 1.2rem 1rem;
-}
-
-.project-card img{
+    position: relative; /* To allow 3D transformations */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    will-change: transform, box-shadow; /* Hint to browser to optimize */
+    height: 392px;
+  }
+  
+  /* Hover effect for 3D look */
+  .project-card:hover {
+    transform: translateY(-10px) rotateY(2deg) rotateX(2deg); /* Slight translation and rotation */
+    transition: transform 0.5s ease;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Adds depth */
+  }
+  
+  /* Apply a perspective on the parent container to enhance the 3D effect */
+  .project-container {
+    perspective: 1500px; /* Adjust the amount of 3D effect */
+  }
+  
+  /* Ensuring image width fits and adding smooth transition */
+  .project-card img {
     width: 100%;
-
-}
-
-.project-title{
+    transition: transform 0.3s ease; /* Smooth transition when hovering */
+  }
+  
+  /* Optional: Scaling effect on image when hovering over the card */
+  .project-card:hover img {
+    transform: scale(1.05); /* Image zooms in slightly when card is hovered */
+  }
+  
+  .project-title {
     color: rgb(0, 227, 205);
     padding: 1rem 0;
-}
-
-.pro-details p{
+  }
+  
+  .pro-details p {
     padding-bottom: 3rem;
     font-size: 1rem;
     text-align: justify;
-    
-}
-
-.pro-btns{
+  }
+  
+  .pro-btns {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0.5rem 0;
-}
-
-.pro-btns .btn{
+  }
+  
+  .pro-btns .btn {
     padding: 0.5rem 1rem;
-}
+  }
+  
+
+
+  
 
 @media screen and (max-width: 740px) {
     .project-container{
         max-width: 90%;
         margin: auto;
         grid-template-columns: 1fr;
+    }
+    .project-card{
+      height: fit-content;
     }
     
 }
